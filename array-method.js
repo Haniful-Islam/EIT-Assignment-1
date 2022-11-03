@@ -70,16 +70,27 @@ const sliceMethod2 = age.slice(2, 4);
 //filter method
 const number5 = [3, 4, 5, 6, 7];
 const filterMethod = number5.filter(number => number > 5);
-console.log(filterMethod);
+// console.log(filterMethod);
+// document.write('<br>', filterMethod)
 
 // find method
 const number6 = [3, 4, 5, 6, 7];
 const findMethod = number6.find(number => number > 5)
-console.log(findMethod);
+// console.log(findMethod);
+// document.write('<br>', findMethod)
 
 //map method
 const number7 = [3, 4, 5, 6, 7];
 const mapMethod = number7.map(number => number * number);
-console.log(mapMethod);
+// console.log(mapMethod);
+// document.write('<br>', mapMethod)
 
+// findindex method
+const number8 = [3, 4, 5, 6, 7];
+const findIndexMethod = number8.findIndex(number => number > 5);
+// console.log(findIndexMethod);
 
+// reverse method
+const names3 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+const reverseName = names3.reverse();
+console.log(names3);
