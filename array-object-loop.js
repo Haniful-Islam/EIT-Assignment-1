@@ -2,14 +2,14 @@
 const number3 = [4, 24, 13];
 const number4 = [7, 35, 15];
 const numbers = [...number3, ...number4];
-document.write("<br>",numbers);
+document.write("<br>",'Spread concat: ',numbers);
 // console.log(numbers)
 
 // concat method
 const conCat1 = 'Bangladesh is a';
 const conCat2 = 'small country'
 const result = conCat1.concat(' ', conCat2);//concat method  
-document.write("<br>",result);
+document.write("<br>", 'concat: ',result);
 // console.log(result);
 
 //every method
@@ -18,7 +18,7 @@ const everyMetod = number1.every(checkout);
 function checkout(num) {
     return num >= 21;
 }
-document.write("<br>",everyMetod);
+document.write("<br>",'every :',everyMetod);
 // console.log(everyMethod);
 
 // some method
@@ -27,13 +27,13 @@ const someMethod = number2.some(checkOut2);
 function checkOut2(num1) {
     return num1 > 63;
 }
-document.write("<br>","some Method:", someMethod)
+document.write("<br>","some: ", someMethod)
 // console.log(someMethod);
 
 // fill method
 const names = ['haniful', 'modhu', 'morsalin', 'raju'];
 names.fill('antor', 2, 3)//fill(value,index,default length);
-document.write("<br>",names);
+document.write("<br>",'fill :',names);
 // console.log(names);
 
 // from method
@@ -42,97 +42,97 @@ document.write("<br>",names);
 let myName = 'haniful'
 let fromMethod = Array.from(myName);
 // console.log(fromMethod);
-document.write("<br>",fromMethod);
+document.write("<br>",'from :',fromMethod);
 
 // join method
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.join(" * ");
-document.write("<br>",fruit);
+document.write("<br>",'join: ',fruit);
 // console.log(fruit);
 
 // splice method
 const names1 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 
 names1.splice(1, 2, 'antor');
-document.write("<br>",names1);
+document.write("<br>",'splice :',names1);
 // console.log(names1)
 
 const names2 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 const sliceMetod1 = names2.slice(1, 4);
-document.write("<br>",sliceMetod1);
+document.write("<br>",'slice :',sliceMetod1);
 
 // slice method
 const age = [1, 2, 3, 4, 5, 6];
 const sliceMethod2 = age.slice(2, 4);
-document.write("<br>",'slice:', sliceMethod2);
+document.write("<br>",'slice: ', sliceMethod2);
 
 //filter method
 const number5 = [3, 4, 5, 6, 7];
 const filterMethod = number5.filter(number => number > 5);
 // console.log(filterMethod);
-document.write('<br>', filterMethod);
+document.write('<br>','filter :', filterMethod);
 
 // find method
 const number6 = [3, 4, 5, 6, 7];
 const findMethod = number6.find(number => number > 5)
 // console.log(findMethod);
-document.write('<br>', findMethod);
+document.write('<br>','find: ', findMethod);
 
 //map method
 const number7 = [3, 4, 5, 6, 7];
 const mapMethod = number7.map(number => number * number);
 // console.log(mapMethod);
-document.write('<br>', mapMethod);
+document.write('<br>', 'map :',mapMethod);
 
 //includes method
 const names11 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 const includesMethod = names11.includes('haniful',2);//incledes(searchValue, start)
 
-document.write('<br>', includesMethod)
+document.write('<br>', 'includes :',includesMethod)
 
 
 // findindex method
 const number8 = [3, 4, 5, 6, 7];
 const findIndexMethod = number8.findIndex(number => number > 5);
 // console.log(findIndexMethod);
-document.write('<br>', findIndexMethod);
+document.write('<br>','findIndex: ', findIndexMethod);
 
 // reverse method
 const names3 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 names3.reverse();
 // console.log(names3);
-document.write('<br>', names3);
+document.write('<br>','reverse: ', names3);
 
 // forEach method
 const names4 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
-names4.forEach(name => document.write('<br>',name));
+names4.forEach(name => document.write('<br>','forEach: ',name));
 
 // sort method
 const names5 = ["morsalin", "haniful",'afif', "modhu", 'raju', "rumman"];
 names5.sort();
 // console.log(names5);
-document.write("<br>",names5);
+document.write("<br>",'sort :',names5);
 
 // push method
 const names6 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 names6.push('afif')
-document.write("<br>",names6);
+document.write("<br>",'push: ',names6);
 
 // unshift method
 const names7 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 names7.unshift('afif')
-document.write("<br>",names7);
+document.write("<br>",'unshift: ',names7);
 
 
 // pop method
 const names8 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 names8.pop('afif')
-document.write("<br>",names8);
+document.write("<br>",'pop: ',names8);
 
 // shift method
 const names9 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 names9.shift('afif');
-document.write("<br>",names9);
+document.write("<br>",'shift: ',names9);
 
 // isArray Method
 const names10 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
@@ -160,8 +160,8 @@ document.write('<br>', 'keys: ', keysMethod);
 const valuesMethod = Object.values(person)
 document.write('<br>', 'values: ', valuesMethod);
 // console.log(valuesMethod);
-const hasownMethod = (Object.hasOwn(person, "fName"))
-document.write('<br>', hasownMethod);
+const hasownMethod = Object.hasOwn(person, "fName")
+document.write('<br>', 'hasOwn: ', hasownMethod);
 
 // object task two
 const obj1 = {
@@ -178,7 +178,7 @@ const obj2 = {
 const obj = { ...obj1, ...obj2 };
 
 // console.log(obj);
-document.write('<br>', obj2);
+document.write('<br>','object-spread: ', obj2);
 
 
 //================= loops ============
