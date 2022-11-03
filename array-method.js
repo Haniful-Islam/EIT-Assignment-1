@@ -14,3 +14,10 @@ function checkout(num) {
 }
 // document.write(everyMetod);
 // console.log(everyMethod);
+
+const names = ['haniful', 'modhu', 'morsalin', 'raju'];
+
+names.fill('antor', 2,3)//fill(value,index,default length);
+document.write(names);
+// console.log(names);
+
