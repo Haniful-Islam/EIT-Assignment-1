@@ -69,6 +69,17 @@ const sliceMethod2 = age.slice(2, 4);
 
 //filter method
 const number5 = [3, 4, 5, 6, 7];
-const filterNum = number5.filter(number => number > 5);
-console.log(filterNum);
+const filterMethod = number5.filter(number => number > 5);
+console.log(filterMethod);
+
+// find method
+const number6 = [3, 4, 5, 6, 7];
+const findMethod = number6.find(number => number > 5)
+console.log(findMethod);
+
+//map method
+const number7 = [3, 4, 5, 6, 7];
+const mapMethod = number7.map(number => number * number);
+console.log(mapMethod);
+
 
