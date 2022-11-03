@@ -14,11 +14,19 @@ function checkout(num) {
 }
 // document.write(everyMetod);
 // console.log(everyMethod);
+// some method
+const number2 = [34,19,32,41,64];
+const someMethod = number2.some(checkOut2);
+function checkOut2(num1){
+    return num1 > 63;
+}
+document.write("some Method:", someMethod)
+// console.log(someMethod);
 
+// fill method
 const names = ['haniful', 'modhu', 'morsalin', 'raju'];
-
 names.fill('antor', 2,3)//fill(value,index,default length);
-document.write(names);
+// document.write(names);
 // console.log(names);
 
 // from method
@@ -27,10 +35,11 @@ document.write(names);
 let myName = 'haniful'
 let fromMethod = Array.from(myName);
 // console.log(fromMethod);
-document.write(fromMethod);
+// document.write(fromMethod);
 
 
 // join method
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.join(" * ");
-console.log(fruit);
+// document.write(fruit);
+// console.log(fruit);
