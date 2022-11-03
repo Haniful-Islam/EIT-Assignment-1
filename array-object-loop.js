@@ -84,6 +84,11 @@ const mapMethod = number7.map(number => number * number);
 // console.log(mapMethod);
 document.write('<br>', mapMethod);
 
+//includes method
+const names11 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+const includesMethod = names11.includes('haniful',2);//incledes(searchValue, start)
+// console.log(includesMethod);
+document.write('<br>', includesMethod);
 
 
 // findindex method
