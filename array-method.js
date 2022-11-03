@@ -106,4 +106,32 @@ const names4 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
 // sort method
 const names5 = ["morsalin", "haniful",'afif', "modhu", 'raju', "rumman"];
 names5.sort();
-console.log(names5);
+// console.log(names5);
+// document.write("<br>",names5);
+
+// push method
+const names6 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+names6.push('afif')
+document.write("<br>",names6);
+
+// unshift method
+const names7 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+names7.unshift('afif')
+document.write("<br>",names7);
+
+
+// pop method
+const names8 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+names8.pop('afif')
+document.write("<br>",names8);
+
+// shift method
+const names9 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+names9.shift('afif');
+document.write("<br>",names9);
+
+// isArray Method
+const names10 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+const isArrayMethod = Array.isArray(names10);
+// console.log(isArrayMethod);
+document.write('<br>', "isArray: ",isArrayMethod);
