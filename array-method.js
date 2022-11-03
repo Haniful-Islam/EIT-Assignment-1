@@ -25,7 +25,12 @@ document.write(names);
 // create an array from a string;
 
 let myName = 'haniful'
-
 let fromMethod = Array.from(myName);
 // console.log(fromMethod);
 document.write(fromMethod);
+
+
+// join method
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.join(" * ");
+console.log(fruit);
