@@ -1,3 +1,10 @@
+// write a program for concatenation two array(using spread operator)
+const number3 = [4,24,13];
+const number4 = [7,35,15];
+const numbers = [...number3,...number4];
+document.write(numbers);
+// console.log(numbers)
+
 // concat method
 const conCat1 = 'Bangladesh is a';
 const conCat2 = 'small country'
@@ -20,7 +27,7 @@ const someMethod = number2.some(checkOut2);
 function checkOut2(num1){
     return num1 > 63;
 }
-document.write("some Method:", someMethod)
+// document.write("some Method:", someMethod)
 // console.log(someMethod);
 
 // fill method
