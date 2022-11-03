@@ -21,3 +21,11 @@ names.fill('antor', 2,3)//fill(value,index,default length);
 document.write(names);
 // console.log(names);
 
+// from method
+// create an array from a string;
+
+let myName = 'haniful'
+
+let fromMethod = Array.from(myName);
+// console.log(fromMethod);
+document.write(fromMethod);
