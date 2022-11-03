@@ -1,8 +1,8 @@
 // write a program for concatenation two array(using spread operator)
-const number3 = [4,24,13];
-const number4 = [7,35,15];
-const numbers = [...number3,...number4];
-document.write(numbers);
+const number3 = [4, 24, 13];
+const number4 = [7, 35, 15];
+const numbers = [...number3, ...number4];
+// document.write(numbers);
 // console.log(numbers)
 
 // concat method
@@ -22,9 +22,9 @@ function checkout(num) {
 // document.write(everyMetod);
 // console.log(everyMethod);
 // some method
-const number2 = [34,19,32,41,64];
+const number2 = [34, 19, 32, 41, 64];
 const someMethod = number2.some(checkOut2);
-function checkOut2(num1){
+function checkOut2(num1) {
     return num1 > 63;
 }
 // document.write("some Method:", someMethod)
@@ -32,7 +32,7 @@ function checkOut2(num1){
 
 // fill method
 const names = ['haniful', 'modhu', 'morsalin', 'raju'];
-names.fill('antor', 2,3)//fill(value,index,default length);
+names.fill('antor', 2, 3)//fill(value,index,default length);
 // document.write(names);
 // console.log(names);
 
@@ -50,3 +50,25 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.join(" * ");
 // document.write(fruit);
 // console.log(fruit);
+
+// splice method
+const names1 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+
+names1.splice(1, 2, 'antor');
+// document.write(names1);
+// console.log(names1)
+
+const names2 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+const sliceMetod1 = names2.slice(1, 4);
+// document.write(sliceMetod1);
+
+// slice method
+const age = [1, 2, 3, 4, 5, 6];
+const sliceMethod2 = age.slice(2, 4);
+// document.write('slice:', sliceMethod2);
+
+//filter method
+const number5 = [3, 4, 5, 6, 7];
+const filterNum = number5.filter(number => number > 5);
+console.log(filterNum);
+

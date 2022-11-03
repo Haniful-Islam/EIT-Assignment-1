@@ -12,7 +12,7 @@ for(const number of numbers){
     document.write('<br>',number);
 }
 document.write('<br>','for in loop:');
-const person = {
+const person1 = {
     fName:'Haniful',
     lName: 'Islam',
     age:20,
@@ -20,7 +20,7 @@ const person = {
 }
 
 // for in
-for(const man in person){
+for(const man in person1){
     // console.log(man)
     document.write('<br>',man)
 }

@@ -6,16 +6,16 @@ const person = {
     profession: 'student'
 }
 // const entriesMethod = Object.entries(person)
+// document.write('<br>', 'entries:',entriesMethod);
 // // console.log(entriesMethod);
-// document.write('Value:', entriesMethod);
 // const keysMethod = Object.keys(person)
+// document.write('<br>', 'keys:', keysMethod);
 // // console.log(keysMethod);
-// document.write('Value:', keysMethod);
 // const valuesMethod = Object.values(person)
+// document.write('<br>', 'values:', valuesMethod);
 // // console.log(valuesMethod);
-// document.write('Value:', valuesMethod);
-const hasownMethod = (Object.hasOwn(person, "fName"))
-document.write(hasownMethod);
+// const hasownMethod = (Object.hasOwn(person, "fName"))
+// document.write('<br>', hasownMethod);
 
 // object task two
 const obj1 = {
@@ -31,6 +31,6 @@ const obj2 = {
 
 const obj = { ...obj1, ...obj2 };
 
-// console.log(obj);
-document.write(obj2);
+console.log(obj);
+// document.write('<br>', obj2);
 
