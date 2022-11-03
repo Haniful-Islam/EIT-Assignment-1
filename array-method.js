@@ -85,12 +85,25 @@ const mapMethod = number7.map(number => number * number);
 // console.log(mapMethod);
 // document.write('<br>', mapMethod)
 
+
+
 // findindex method
 const number8 = [3, 4, 5, 6, 7];
 const findIndexMethod = number8.findIndex(number => number > 5);
 // console.log(findIndexMethod);
+// document.write('<br>', findIndexMethod);
 
 // reverse method
 const names3 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
-const reverseName = names3.reverse();
-console.log(names3);
+names3.reverse();
+// console.log(names3);
+// document.write('<br>', names3)
+
+// forEach method
+const names4 = ["morsalin", "haniful", "modhu", 'raju', "rumman"];
+// names4.forEach(name => document.write('<br>',name));
+
+// sort method
+const names5 = ["morsalin", "haniful",'afif', "modhu", 'raju', "rumman"];
+names5.sort();
+console.log(names5);
